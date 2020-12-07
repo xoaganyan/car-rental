@@ -27,6 +27,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /* Pattern wich hides elements that aren't on temlate, but should be form semantic */
@@ -45,6 +46,8 @@ a {
 
 /* General title for sections */
 .title {
+  margin: 0;
+
   font-size: 36px;
   line-height: 44px;
   font-weight: 900;
@@ -53,6 +56,8 @@ a {
 
 /* General title for items */
 .item-title {
+  margin: 0;
+
   font-size: 18px;
   line-height: 22px;
   color: #fff;
@@ -69,4 +74,156 @@ a {
 
   border: 1px solid #000000;
   border-radius: 3px;
+}
+
+/* section products */
+
+.products {
+  padding-top: 84px;
+  padding-bottom: 133px;
+}
+
+.products__title {
+  margin-bottom: 32px;
+
+  color: #000;
+}
+
+.products__item {
+  margin-bottom: 137px;
+}
+
+.products__item:last-child {
+  margin-bottom: 0;
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.product__image {
+  margin-bottom: 45px;
+}
+
+.product__title {
+  margin-bottom: 13px;
+
+  color: #000;
+  font-weight: 900;
+}
+
+.product__show-all {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.product__status {
+  margin: 0;
+  margin-bottom: 13px;
+
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.product__text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.product__text--key {
+  font-weight: 700;
+}
+
+.product__text--engine,
+.product__text--fuel {
+  margin-bottom: 9px;
+}
+
+.product__text--safety {
+  margin-bottom: 15px;
+}
+
+.product__text--pledge {
+  margin-bottom: 23px;
+}
+
+/* section features */
+
+.features {
+  position: relative;
+
+  padding-top: 77px;
+  padding-bottom: 135px;
+
+  background-color: #393939;
+  background-image: url("../images/features-bg.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.features:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+
+  background: rgba(57, 57, 57, 0.8);
+}
+
+.features > * {
+  position: relative;
+
+  z-index: 5;
+}
+
+.features__title {
+  margin-bottom: 90px;
+
+  text-align: center;
+}
+
+.features__item {
+  max-width: 445px;
+}
+
+.features__item-wrap {
+  margin-bottom: 55px;
+}
+
+.features__item-title {
+  margin-bottom: 13px;
+}
+
+.features__item-text {
+  margin: 0;
+
+  color: #fff;
+}
+/* убрать расстояния после последних 2 элементов */
+.features__item-wrap:first-child {
+  color: red;
+}
+
+/* page-footer */
+.page-footer {
+  padding: 25px 0;
+
+  color: #fff;
+
+  background: #000;
+}
+
+.page-footer__policy {
+  margin: 0;
+
+  line-height: 20px;
 }
