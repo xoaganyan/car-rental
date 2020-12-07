@@ -7,31 +7,36 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="container">
-        <a href="" class="page-header__logo">
-          <img class="logo" src="images/logo.svg" alt="Аренда авто в Сочи" width="235" height="20">
-        </a><!-- /.page-header__logo -->
-        <ul class="page-header__contact contact">
-          <li class="contact__item">
-            <a class="contact__link" href="https://api.whatsapp.com/send?phone=+79181111111">
-              <span class="visually-hidde">Вотсап</span>
-            </a>
-          </li>
-          <li class="contact__item">
-            <a class="contact__link" href="https://api.whatsapp.com/send?phone=+79181111111">
-              <span class="visually-hidde">Вотсап</span>
-            </a>
-          </li>
-        </ul><!-- /.page-header__contact contact-->
-        <a class="page-header__phone" href="tel:+7(918)11-11-111">
-          +7 (918) 11-11-111
-        </a><!-- /.page-header__phone -->
-        <a class="page-header__order-call btn" href="#">
-          Заказать звонок
-        </a><!-- /.page-header__order-call btn-->
+        <div class="row">
+          <div class="col-md-12 d-flex align-items-center justify-content-between">
+            <a href="" class="page-header__logo">
+              <img class="logo" src="images/logo.svg" alt="Аренда авто в Сочи" width="235" height="20">
+            </a><!-- /.page-header__logo -->
+            <ul class="page-header__contact contact d-flex">
+              <li class="contact__item">
+                <a class="contact__link" href="https://api.whatsapp.com/send?phone=+79181111111">
+                  <span class="visually-hidde">Вотсап</span>
+                </a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link" href="https://api.whatsapp.com/send?phone=+79181111111">
+                  <span class="visually-hidde">Вотсап</span>
+                </a>
+              </li>
+            </ul><!-- /.page-header__contact contact-->
+            <a class="page-header__phone" href="tel:+7(918)11-11-111">
+              +7 (918) 11-11-111
+            </a><!-- /.page-header__phone -->
+            <a class="page-header__order-call btn" href="#">
+              Заказать звонок
+            </a><!-- /.page-header__order-call btn-->
+          </div>
+        </div>
         <div class="page-header__promo">
           <h1 class="page-header__title title">Автопрокат в<br> Сочи</h1>
           <p class="page-header__subtitle">
@@ -39,7 +44,7 @@
           </p>
         </div><!-- /.page-header__promo -->
         <nav class="page-header__nav main-nav">
-          <ul class="site-nav">
+          <ul class="site-nav d-flex">
             <li class="site-nav__item">
               <a class="site-nav__link" href="#">Автопрокат и цены</a>
             </li>

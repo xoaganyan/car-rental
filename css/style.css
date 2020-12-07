@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Pattern wich hides elements that aren't on temlate, but should be form semantic */
+.visually-hidden {
+  position: absolute !important;
+
+  padding: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+
+  border: 0 !important;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* General title for sections */
+.title {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 900;
+  color: #fff;
+}
+
+/* General title for items */
+.item-title {
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/*General button*/
+.btn {
+  padding: 7px 28px;
+
+  font-size: 18px;
+  line-height: 22px;
+  color: inherit;
+
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
