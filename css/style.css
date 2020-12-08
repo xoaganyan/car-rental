@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
 
+  min-width: 320px;
+
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -234,11 +236,53 @@ a {
 }
 
 .features__item {
+  position: relative;
+
+  padding-left: 118px;
+  margin-bottom: 55px;
   max-width: 445px;
 }
 
-.features__item-wrap {
-  margin-bottom: 55px;
+.features__item--1::after,
+.features__item--4::after,
+.features__item--5::after {
+  background-image: url("../images/fuel.svg");
+}
+
+.features__item--2::after,
+.features__item--3::after,
+.features__item--6::after {
+  background-image: url("../images/warning.svg");
+}
+
+.features__item--5,
+.features__item--6 {
+  margin-bottom: 0;
+}
+
+.features__item:before {
+  position: absolute;
+  left: 90px;
+  top: 0;
+  content: "";
+
+  width: 3px;
+  height: 77px;
+
+  background-color: #fff;
+}
+
+.features__item:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+
+  width: 70px;
+  height: 70px;
+
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .features__item-title {
@@ -249,10 +293,6 @@ a {
   margin: 0;
 
   color: #fff;
-}
-/* убрать расстояния после последних 2 элементов */
-.features__item-wrap:first-child {
-  color: red;
 }
 
 /* page-footer */
@@ -268,4 +308,33 @@ a {
   margin: 0;
 
   line-height: 20px;
+}
+
+/* Extra Large Devices */
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1199px) {
+}
+
+/* Large Devices */
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 991px) {
+}
+
+/* Medium Devices */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 767px) {
+}
+
+/* Small Devices */
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 575px) {
 }
