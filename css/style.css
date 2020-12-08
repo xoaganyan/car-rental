@@ -14,6 +14,8 @@ body {
 
 html {
   box-sizing: border-box;
+
+  scroll-behavior: smooth;
 }
 
 *,
@@ -76,6 +78,10 @@ a {
 
   border: 1px solid #000000;
   border-radius: 3px;
+}
+
+.has-error {
+  border-color: red;
 }
 
 /* page-header */
@@ -413,6 +419,57 @@ a {
   line-height: 20px;
 }
 
+/* order call */
+
+.order-call {
+  display: none;
+}
+
+.form {
+  padding: 51px 65px !important;
+  max-width: 540px;
+}
+
+.order-call__title {
+  margin-bottom: 43px;
+
+  color: #000;
+}
+
+.form__item {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  padding-top: 9px;
+  padding-right: 21px;
+  padding-bottom: 5px;
+  padding-left: 21px;
+  width: 100%;
+
+  font: inherit;
+  color: #000;
+
+  border: 1px solid #494949;
+  border-radius: 3px;
+}
+
+.form-input::placeholder {
+  color: #b5b5b5;
+}
+
+.form__send-btn {
+  display: block;
+  margin: 0 auto;
+
+  font: inherit;
+  text-align: center;
+
+  background-color: transparent;
+  cursor: pointer;
+}
+
 /* Extra Large Devices */
 @media screen and (max-width: 1200px) {
 }
@@ -422,16 +479,45 @@ a {
 
 /* Large Devices */
 @media screen and (max-width: 992px) {
-}
+  .products__item {
+    margin-bottom: 80px;
+  }
 
-@media screen and (max-width: 991px) {
+  .products__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .product__show-all {
+    display: block;
+  }
+
+  .features__item {
+    margin-left: 0 !important;
+    margin-bottom: 55px;
+  }
+
+  .features__item--6 {
+    margin-bottom: 55px;
+  }
+
+  .features__title {
+    text-align: left;
+  }
 }
 
 /* Medium Devices */
 @media screen and (max-width: 768px) {
-}
+  .product__prices {
+    flex-wrap: wrap;
+  }
 
-@media screen and (max-width: 767px) {
+  .product__text--price {
+    margin-bottom: 20px !important;
+  }
+
+  .product__order {
+    margin-top: 20px;
+  }
 }
 
 /* Small Devices */
@@ -439,5 +525,15 @@ a {
 @media screen and (max-width: 576px) {
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 450px) {
+  .product__prices {
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    text-align: left;
+  }
+
+  .features__title {
+    max-width: 428px;
+  }
 }
